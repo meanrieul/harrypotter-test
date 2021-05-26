@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.js": "/harrypotter-test/static/js/main.f4c455aa.chunk.js",
-    "main.js.map": "/harrypotter-test/static/js/main.f4c455aa.chunk.js.map",
+    "main.js": "/harrypotter-test/static/js/main.97b61930.chunk.js",
+    "main.js.map": "/harrypotter-test/static/js/main.97b61930.chunk.js.map",
     "runtime-main.js": "/harrypotter-test/static/js/runtime-main.e32b5240.js",
     "runtime-main.js.map": "/harrypotter-test/static/js/runtime-main.e32b5240.js.map",
     "static/js/2.cf767e7a.chunk.js": "/harrypotter-test/static/js/2.cf767e7a.chunk.js",
@@ -12,6 +12,6 @@
   "entrypoints": [
     "static/js/runtime-main.e32b5240.js",
     "static/js/2.cf767e7a.chunk.js",
-    "static/js/main.f4c455aa.chunk.js"
+    "static/js/main.97b61930.chunk.js"
   ]
 }
