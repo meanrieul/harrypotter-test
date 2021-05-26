@@ -4,13 +4,15 @@ import styled from "styled-components";
 const Container = styled.div`
   display: flex;
   justify-content: space-between;
+  width: 100%;
 `;
 
 const Option = styled.div`
   display: flex;
-  width: 100px;
+  width: 80px;
   flex-direction: column;
   align-items: center;
+  font-size: 10px;
 `;
 
 const Checkbox = ({ num }) => (
