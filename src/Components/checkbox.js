@@ -9,7 +9,7 @@ const Container = styled.div`
 
 const Option = styled.div`
   display: flex;
-  width: 80px;
+  width: 20%;
   flex-direction: column;
   align-items: center;
   font-size: 10px;

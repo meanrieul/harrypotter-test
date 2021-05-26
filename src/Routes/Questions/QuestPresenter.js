@@ -3,14 +3,15 @@ import styled from "styled-components";
 import { Link } from "react-router-dom";
 import Checkbox from "Components/checkbox";
 const Container = styled.div`
-  padding: 20px;
   display: flex;
   flex-direction: column;
   align-items: center;
-  width: 100%;
+  width: 370px;
 `;
 
-const Theme = styled.form``;
+const Theme = styled.form`
+  width: 100%;
+`;
 
 const Question = styled.div`
   margin-bottom: 30px;

@@ -3,10 +3,10 @@ import styled from "styled-components";
 import { Link } from "react-router-dom";
 
 const Container = styled.div`
-  padding: 20px;
   display: flex;
   flex-direction: column;
   align-items: center;
+  width: 370px;
 `;
 
 const Form = styled.form`
