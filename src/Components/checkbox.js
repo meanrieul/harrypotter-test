@@ -18,23 +18,23 @@ const Option = styled.div`
 const Checkbox = ({ num }) => (
   <Container>
     <Option>
-      <input type="radio" name={num} value={1} />
+      <input type="radio" name={num} value={0} />
       <label>절대 아니다</label>
     </Option>
     <Option>
-      <input type="radio" name={num} value={2} />
+      <input type="radio" name={num} value={5} />
       <label>아니다</label>
     </Option>
     <Option>
-      <input type="radio" name={num} value={3} />
+      <input type="radio" name={num} value={10} />
       <label>보통</label>
     </Option>
     <Option>
-      <input type="radio" name={num} value={4} />
+      <input type="radio" name={num} value={15} />
       <label>그렇다</label>
     </Option>
     <Option>
-      <input type="radio" name={num} value={5} />
+      <input type="radio" name={num} value={20} />
       <label>매우 그렇다</label>
     </Option>
   </Container>
