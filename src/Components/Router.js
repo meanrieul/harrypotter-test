@@ -7,6 +7,6 @@ export default () => (
   <Router>
     <Route path="/" exact component={Home} />
     <Route path="/questions" component={Questions} />
-    <Route path="/result" exact component={Result} />
+    <Route path="/result" component={Result} />
   </Router>
 );

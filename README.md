@@ -10,6 +10,7 @@ Let's find your best-friend in Wizarding World.
 
 ## Details
 
-- [ ] Input Name
+- [x] Input Name
 - [ ] Share Link
 - [ ] Result Capture(If you can!)
+- [ ] Restart
