@@ -1,0 +1,2 @@
+.container{display:block;position:relative;margin-top:20px;margin-bottom:20px;cursor:pointer;font-size:18px;height:40px;width:300px}.checkmark{position:absolute;top:0;left:0;height:40px;width:360px;padding:5px;background-color:#eee}.container:hover .checkmark{background-color:#ccc}.container input:checked~.checkmark{background-color:#2196f3}
+/*# sourceMappingURL=main.fe1612a8.chunk.css.map */

@@ -1,17 +1,20 @@
 {
   "files": {
-    "main.js": "/harrypotter-test/static/js/main.38502e91.chunk.js",
-    "main.js.map": "/harrypotter-test/static/js/main.38502e91.chunk.js.map",
+    "main.css": "/harrypotter-test/static/css/main.fe1612a8.chunk.css",
+    "main.js": "/harrypotter-test/static/js/main.fa8d94ea.chunk.js",
+    "main.js.map": "/harrypotter-test/static/js/main.fa8d94ea.chunk.js.map",
     "runtime-main.js": "/harrypotter-test/static/js/runtime-main.e32b5240.js",
     "runtime-main.js.map": "/harrypotter-test/static/js/runtime-main.e32b5240.js.map",
-    "static/js/2.b05f548b.chunk.js": "/harrypotter-test/static/js/2.b05f548b.chunk.js",
-    "static/js/2.b05f548b.chunk.js.map": "/harrypotter-test/static/js/2.b05f548b.chunk.js.map",
+    "static/js/2.58755a71.chunk.js": "/harrypotter-test/static/js/2.58755a71.chunk.js",
+    "static/js/2.58755a71.chunk.js.map": "/harrypotter-test/static/js/2.58755a71.chunk.js.map",
     "index.html": "/harrypotter-test/index.html",
-    "static/js/2.b05f548b.chunk.js.LICENSE.txt": "/harrypotter-test/static/js/2.b05f548b.chunk.js.LICENSE.txt"
+    "static/css/main.fe1612a8.chunk.css.map": "/harrypotter-test/static/css/main.fe1612a8.chunk.css.map",
+    "static/js/2.58755a71.chunk.js.LICENSE.txt": "/harrypotter-test/static/js/2.58755a71.chunk.js.LICENSE.txt"
   },
   "entrypoints": [
     "static/js/runtime-main.e32b5240.js",
-    "static/js/2.b05f548b.chunk.js",
-    "static/js/main.38502e91.chunk.js"
+    "static/js/2.58755a71.chunk.js",
+    "static/css/main.fe1612a8.chunk.css",
+    "static/js/main.fa8d94ea.chunk.js"
   ]
 }
