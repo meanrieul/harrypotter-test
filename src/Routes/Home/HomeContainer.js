@@ -9,9 +9,14 @@ export default class extends React.Component {
   };
   reset = () => {
     localStorage.removeItem("userName");
-    localStorage.removeItem("scoreA");
-    localStorage.removeItem("scoreB");
-    localStorage.removeItem("scoreC");
+    localStorage.removeItem("score1");
+    localStorage.removeItem("score2");
+    localStorage.removeItem("score3");
+    localStorage.removeItem("score4");
+    localStorage.removeItem("score5");
+    localStorage.removeItem("score6");
+    localStorage.removeItem("score7");
+    localStorage.removeItem("score8");
     this.setState({ loading: false });
   };
 

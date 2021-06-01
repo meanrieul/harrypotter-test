@@ -1,12 +1,12 @@
 import React from "react";
 import { HashRouter as Router, Route } from "react-router-dom";
 import Home from "Routes/Home";
-import Questions from "Routes/Questions";
+import Question from "Routes/Question";
 import Result from "Routes/Result";
 export default () => (
   <Router>
     <Route path="/" exact component={Home} />
-    <Route path="/questions" component={Questions} />
+    <Route path="/question/:id" component={Question} />
     <Route path="/result" component={Result} />
   </Router>
 );

@@ -1,0 +1,22 @@
+@font-face {
+  src: url("../Fonts/THEdog.ttf");
+  font-family: "dog";
+}
+@font-face {
+  src: url("../Fonts/Typo_YeonhuidongB.ttf");
+  font-family: "yeon";
+}
+
+* {
+  font-family: "dog";
+}
+h1 {
+  font-family: "yeon";
+}
+.button {
+  font-family: "yeon";
+}
+body {
+  display: flex;
+  justify-content: center;
+}
