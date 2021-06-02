@@ -46,13 +46,17 @@ const Container = styled.div`
 
 const Theme = styled.form`
   width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 `;
 
 const Question = styled.div`
-  margin-bottom: 30px;
+  margin-bottom: 50px;
 `;
 
 const ButtonContainer = styled.div`
+  width: 100%;
   display: flex;
   justify-content: space-between;
 `;
@@ -64,19 +68,19 @@ const Title = styled.h1``;
 const Restart = styled(Link)``;
 
 const Result = styled.button``;
-const QuestPresenter = ({ handleClick, handleSubmit, questionId }) => (
+const QuestPresenter = ({ handleSubmit, questionId }) => (
   <Container>
     <Title>{`Question ${questionId}`}</Title>
     <Theme onSubmit={handleSubmit}>
-      {questions[questionId - 1].title}
+      <h2>{questions[questionId - 1].title}</h2>
       <Question>
         <Checkbox num="Question" options={questions[questionId - 1].options} />
       </Question>
       <ButtonContainer>
         {questionId === "8" ? (
-          <Result onClick={handleClick}>결과 보기</Result>
+          <Result>결과 보기</Result>
         ) : (
-          <Save onClick={handleClick}>다음 페이지로</Save>
+          <Save>다음 페이지로</Save>
         )}
 
         <Restart to="/">다시하기!</Restart>

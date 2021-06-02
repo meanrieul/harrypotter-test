@@ -54,26 +54,21 @@ const HomePresenter = ({
   handleSubmit,
   updateName,
   currentName,
-  reset,
-}) =>
-  loading ? (
-    <>{reset()}</>
-  ) : (
-    <Container>
-      <Title>호그와트에 입학한 당신의 찐친은?</Title>
-      <Form onSubmit={handleSubmit}>
-        <Input
-          placeholder="이름을 입력해주세요."
-          value={userName}
-          onChange={updateName}
-        />
-        <Button>저장</Button>
-      </Form>
-      <Greeting>{currentName && `안녕하세요, ${currentName}님!`}</Greeting>
-      <Start className="button" to="/question/1">
-        시작하기
-      </Start>
-    </Container>
-  );
-
+}) => (
+  <Container>
+    <Title>호그와트에 입학한 당신의 찐친은?</Title>
+    <Form onSubmit={handleSubmit}>
+      <Input
+        placeholder="이름을 입력해주세요."
+        value={userName}
+        onChange={updateName}
+      />
+      <Button>저장</Button>
+    </Form>
+    <Greeting>{currentName && `안녕하세요, ${currentName}님!`}</Greeting>
+    <Start className="button" to="/question/1">
+      시작하기
+    </Start>
+  </Container>
+);
 export default HomePresenter;

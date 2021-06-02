@@ -5,9 +5,8 @@ export default class extends React.Component {
   state = {
     userName: "",
     currentName: "",
-    loading: true,
   };
-  reset = () => {
+  componentDidMount() {
     localStorage.removeItem("userName");
     localStorage.removeItem("score1");
     localStorage.removeItem("score2");
@@ -18,8 +17,7 @@ export default class extends React.Component {
     localStorage.removeItem("score7");
     localStorage.removeItem("score8");
     this.setState({ loading: false });
-  };
-
+  }
   handleSubmit = (event) => {
     event.preventDefault();
     const { userName } = this.state;
@@ -42,15 +40,13 @@ export default class extends React.Component {
   };
 
   render() {
-    const { userName, currentName, loading } = this.state;
+    const { userName, currentName } = this.state;
     return (
       <HomePresenter
         userName={userName}
-        loading={loading}
         handleSubmit={this.handleSubmit}
         updateName={this.updateName}
         currentName={currentName}
-        reset={this.reset}
       />
     );
   }
