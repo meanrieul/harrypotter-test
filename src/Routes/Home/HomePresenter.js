@@ -1,74 +1,74 @@
 import React from "react";
 import styled from "styled-components";
 import { Link } from "react-router-dom";
+import img from "assets/home3.png";
 
-const Title = styled.h1`
-  margin-top: 100px;
-  font-size: 23px;
-`;
 const Container = styled.div`
   display: flex;
+  position: relative;
   flex-direction: column;
   align-items: center;
   width: 370px;
 `;
 
 const Form = styled.form`
-  margin-bottom: 50px;
+  position: absolute;
+  top: 260px;
   width: 100%;
   display: flex;
   justify-content: center;
-  margin-top: 100px;
 `;
 
 const Input = styled.input`
   all: unset;
-  font-size: 28px;
-  width: 300px;
+  font-size: 24px;
+  width: 200px;
+  color: white;
 `;
 
-const Button = styled.button``;
+const Button = styled.button`
+  height: 30px;
+  border: none;
+  cursor: pointer;
+  background-color: whitesmoke;
+`;
 
 const Greeting = styled.div`
   height: 40px;
-  margin-bottom: 100px;
+  position: absolute;
+  top: 300px;
+  color: white;
 `;
 
 const Start = styled(Link)`
+  position: absolute;
   display: flex;
-  width: 200px;
-  height: 40px;
-  border: 2px solid black;
-  border-radius: 14px;
-  align-items: center;
-  justify-content: center;
-  text-decoration: none;
-  background-color: black;
-  color: white;
-  font-size: 20px;
+  top: 320px;
+  left: 90px;
+  width: 180px;
+  height: 80px;
 `;
 
-const HomePresenter = ({
-  userName,
-  loading,
-  handleSubmit,
-  updateName,
-  currentName,
-}) => (
+const Cover = styled.img`
+  position: absolute;
+  width: 375px;
+  height: 720px;
+  top: 0;
+  z-index: -1;
+`;
+const HomePresenter = ({ userName, handleSubmit, updateName, currentName }) => (
   <Container>
-    <Title>호그와트에 입학한 당신의 찐친은?</Title>
+    <Cover src={img} />{" "}
     <Form onSubmit={handleSubmit}>
       <Input
-        placeholder="이름을 입력해주세요."
+        placeholder="이름을 입력해주세요"
         value={userName}
         onChange={updateName}
       />
       <Button>저장</Button>
     </Form>
     <Greeting>{currentName && `안녕하세요, ${currentName}님!`}</Greeting>
-    <Start className="button" to="/question/1">
-      시작하기
-    </Start>
+    <Start className="button" to="/question/1" />
   </Container>
 );
 export default HomePresenter;

@@ -2,39 +2,154 @@ import React from "react";
 import styled from "styled-components";
 import { Link } from "react-router-dom";
 import Checkbox from "Components/checkbox";
+import img from "assets/question.jpg";
 
 const questions = [
   {
-    title: "질문1",
-    options: ["보기1", "보기2", "보기3", "보기4"],
+    title: "복도를 걷던 중, 선배에게 괴롭힘을 당하는 친구를 발견했다.",
+    size: 4,
+    options: [
+      { text: "도움이 될 만한 사람을 찾아 불러온다.", score: [33, 0, 0, 0] },
+      { text: "선배에게 직접 그만두라고 얘기한다.", score: [100, 0, 0, 0] },
+      {
+        text: "'다른 사람이 도와주겠지' 생각하고 지나친다.",
+        score: [0, 0, 0, 0],
+      },
+      { text: "선배의 관심사를 돌릴 방법을 찾아본다.", score: [66, 20, 0, 0] },
+    ],
   },
   {
-    title: "질문2",
-    options: ["보기1", "보기2", "보기3", "보기4"],
+    title: "산책을 하던 중 길을 잃은 강아지를 발견했다.",
+    size: 3,
+    options: [
+      {
+        text: "한 동안 지켜보다가 집으로 데려간다.",
+        score: [0, 0, 0, 0],
+      },
+      {
+        text: "인식표를 확인한 뒤, 주변 동물병원에 가서 주인을 찾아본다.",
+        score: [0, 90, 0, 0],
+      },
+      {
+        text: "신경 쓰지 않고 지나간다.",
+        score: [0, 45, 0, 0],
+      },
+    ],
   },
   {
-    title: "질문3",
-    options: ["보기1", "보기2", "보기3", "보기4"],
+    title:
+      "외국인 친구가 다른 친구들 사이에서 인종차별로 괴롭힘을 당하고 있다.",
+    size: 4,
+    options: [
+      {
+        text: "같이 괴롭힘을 당할지도 모르니 다른 친구들의 말에 조금씩 호응을 해준다.",
+        score: [0, 0, -50, 0],
+      },
+      {
+        text: "그 상황이 지난 뒤 외국인 친구를 따로 만나 위로하여준다.",
+        score: [0, 0, 50, 0],
+      },
+      {
+        text: "다른 친구들에게 옳지 못한 행동임을 말해준 뒤 친구를 위로해준다.",
+        score: [0, 0, 100, 0],
+      },
+      {
+        text: "본인의 문제가 아니니 옹호하지도 도와주지도 않는다.",
+        score: [0, 0, 0, 0],
+      },
+    ],
   },
   {
-    title: "질문4",
-    options: ["보기1", "보기2", "보기3", "보기4"],
+    title:
+      "확실하진 않지만 빨리 도착할 수 있는 지름길과 확실하지만 먼 길의 갈래길에 서있다.",
+    size: 2,
+    options: [
+      {
+        text: "확실하지 않은 길은 두렵기에 시간이 걸려도 확실한 길로 간다.",
+        score: [0, 0, 0, 0],
+      },
+      {
+        text: "고민없이 빨리 도착할 수 있는 길을 믿고 간다.",
+        score: [0, 0, 0, 100],
+      },
+    ],
   },
   {
-    title: "질문5",
-    options: ["보기1", "보기2", "보기3", "보기4"],
+    title: "평소 좋아하지 않는 팀원이 상사의 전달을 제대로 받지 못했다.",
+    size: 4,
+    options: [
+      {
+        text: "그룹의 원활한 소통을 위해 직접 알려준다.",
+        score: [0, 90, 0, 0],
+      },
+      { text: "'누군가 알려주겠지' 하고 내버려둔다.", score: [0, 0, 0, 0] },
+      {
+        text: "일부러 잘못된 정보를 알려준다.",
+        score: [0, 0, 0, 20],
+      },
+      {
+        text: "알고 있는 정보가 잘못되었다는 사실만 인지시킨다.",
+        score: [0, 50, 0, 0],
+      },
+    ],
   },
   {
-    title: "질문6",
-    options: ["보기1", "보기2", "보기3", "보기4"],
+    title: "여행을 하던 중 길을 잃어 낯선 곳에 도착했다.",
+    size: 3,
+    options: [
+      {
+        text: "설레는 마음으로 즉흥적인 여행을 시작한다.",
+        score: [100, 0, 0, 0],
+      },
+      {
+        text: "왔던 길을 되짚어서 원래의 여행지로 돌아간다.",
+        score: [0, 0, 0, 0],
+      },
+      {
+        text: "지구는 둥그니까 걷다보면 길을 찾을 것이다.",
+        score: [50, 0, 0, 0],
+      },
+    ],
   },
   {
-    title: "질문7",
-    options: ["보기1", "보기2", "보기3", "보기4"],
+    title: "정당하지 못한 방식으로 승진을 할 수 있는 기회가 생겼다.",
+    size: 3,
+    options: [
+      {
+        text: "주변의 시선들을 무시하고 기회를 잡는다.",
+        score: [0, 0, 0, 100],
+      },
+      {
+        text: "기회가 좀 더 필요한 이를 추천하여 도와준다.",
+        score: [0, 0, 0, 0],
+      },
+      {
+        text: "정중하게 거절하고 맡은 바에 최선을 다한다.",
+        score: [0, 0, 0, 50],
+      },
+    ],
   },
   {
-    title: "질문8",
-    options: ["보기1", "보기2", "보기3", "보기4"],
+    title: "조별과제의 리더가 된 당신, 그룹에 겉 도는 멤버가 보인다.",
+    size: 4,
+    options: [
+      {
+        text: "그 멤버의 성향을 파악하여 적절한 역할을 부여하고자 노력한다.",
+        score: [0, 20, 100, 0],
+      },
+      {
+        text: "어떻게든 다른 멤버에게 녹아들 수 있도록 한다.",
+        score: [0, 0, 33, 0],
+      },
+      {
+        text: "다른 신경 쓸 일이 많으니 남는 역할을 부여한다.",
+        score: [0, 0, 0, 0],
+      },
+      {
+        text: "스스로 본인의 역할을 얻어낼 수 있도록 한다.",
+        score: [0, 0, 66, 0],
+      },
+    ],
   },
 ];
 const Container = styled.div`
@@ -52,38 +167,74 @@ const Theme = styled.form`
 `;
 
 const Question = styled.div`
-  margin-bottom: 50px;
+  margin: 50px 0;
 `;
 
 const ButtonContainer = styled.div`
   width: 100%;
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
 `;
 
-const Save = styled.button``;
+const Save = styled.button`
+  height: 30px;
+  width: 80px;
+  background-color: #0c0c18;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+`;
 
-const Title = styled.h1``;
+const Title = styled.h1`
+  color: white;
+`;
 
-const Restart = styled(Link)``;
+const Restart = styled(Link)`
+  text-decoration: none;
+`;
 
-const Result = styled.button``;
+const Result = styled.button`
+  height: 30px;
+  width: 80px;
+  background-color: white;
+  color: #0c0c18;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+`;
+
+const QuestionTitle = styled.h2`
+  color: white;
+`;
+const Cover = styled.img`
+  position: absolute;
+  width: 375px;
+  height: 720px;
+  top: 0;
+  z-index: -1;
+  filter: blur(1.5px);
+  opacity: 0.8;
+`;
 const QuestPresenter = ({ handleSubmit, questionId }) => (
   <Container>
-    <Title>{`Question ${questionId}`}</Title>
+    <Cover src={img} />
+    <Title>{questions[questionId - 1].title}</Title>
     <Theme onSubmit={handleSubmit}>
-      <h2>{questions[questionId - 1].title}</h2>
+      <QuestionTitle>{questions[questionId - 1].title}</QuestionTitle>
       <Question>
-        <Checkbox num="Question" options={questions[questionId - 1].options} />
+        <Checkbox
+          num="Question"
+          size={questions[questionId - 1].size}
+          options={questions[questionId - 1].options}
+        />
       </Question>
       <ButtonContainer>
         {questionId === "8" ? (
           <Result>결과 보기</Result>
         ) : (
-          <Save>다음 페이지로</Save>
+          <Save>다음 질문</Save>
         )}
-
-        <Restart to="/">다시하기!</Restart>
       </ButtonContainer>
     </Theme>
   </Container>

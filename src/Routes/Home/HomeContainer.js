@@ -7,15 +7,7 @@ export default class extends React.Component {
     currentName: "",
   };
   componentDidMount() {
-    localStorage.removeItem("userName");
-    localStorage.removeItem("score1");
-    localStorage.removeItem("score2");
-    localStorage.removeItem("score3");
-    localStorage.removeItem("score4");
-    localStorage.removeItem("score5");
-    localStorage.removeItem("score6");
-    localStorage.removeItem("score7");
-    localStorage.removeItem("score8");
+    localStorage.clear();
     this.setState({ loading: false });
   }
   handleSubmit = (event) => {

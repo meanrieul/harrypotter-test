@@ -36,7 +36,7 @@ const ResultPresenter = ({
         : " 당신의 베스트 프렌드는?"}
     </div>
 
-    <Bestfriend>B입니다.</Bestfriend>
+    <Bestfriend>해그리드입니다.</Bestfriend>
     <Restart to="/">다시하기!</Restart>
     <Share id="share" onClick={handleShare}>
       친구들에게 이 테스트 공유하기

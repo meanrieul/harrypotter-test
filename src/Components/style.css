@@ -16,6 +16,9 @@ h1 {
 .button {
   font-family: "yeon";
 }
+button {
+  font-family: "yeon";
+}
 body {
   display: flex;
   justify-content: center;
