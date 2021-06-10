@@ -4,7 +4,7 @@ import "Components/checkbox.css";
 const Checkbox = ({ num, size, options }) => {
   if (size == 4) {
     return (
-      <div className="checkbox">
+      <div className="checkbox_four">
         <label className="container">
           <input type="radio" name={num} value={options[0].score} required />
           <div className="checkmark">
@@ -33,7 +33,7 @@ const Checkbox = ({ num, size, options }) => {
     );
   } else if (size == 3) {
     return (
-      <div className="checkbox">
+      <div className="checkbox_three">
         <label className="container">
           <input type="radio" name={num} value={options[0].score} required />
           <div className="checkmark">
@@ -56,7 +56,7 @@ const Checkbox = ({ num, size, options }) => {
     );
   } else {
     return (
-      <div className="checkbox">
+      <div className="checkbox_two">
         <label className="container">
           <input type="radio" name={num} value={options[0].score} required />
           <div className="checkmark">

@@ -1,7 +1,23 @@
-.checkbox {
+.checkbox_four {
   display: grid;
   grid-template-columns: 150px 150px;
   grid-template-rows: 150px 150px;
+  row-gap: 20px;
+  column-gap: 20px;
+  justify-content: center;
+}
+.checkbox_three {
+  display: grid;
+  grid-template-columns: 330px;
+  grid-template-rows: 90px 90px 90px;
+  row-gap: 20px;
+  column-gap: 20px;
+  justify-content: center;
+}
+.checkbox_two {
+  display: grid;
+  grid-template-columns: 330px;
+  grid-template-rows: 100px 100px;
   row-gap: 20px;
   column-gap: 20px;
   justify-content: center;
@@ -11,7 +27,8 @@
   display: block;
   position: relative;
   cursor: pointer;
-  font-size: 18px;
+  font-size: 17px;
+  white-space: pre-wrap;
 }
 
 /* Create a custom radio button */
@@ -36,6 +53,11 @@
 .container input:checked ~ .checkmark {
   background-color: #0c0c18;
   color: white;
+}
+
+span {
+  padding: 5px;
+  text-align: center;
 }
 
 /* Style the indicator (dot/circle) */

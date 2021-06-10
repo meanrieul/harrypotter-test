@@ -6,16 +6,16 @@ import img from "assets/question.jpg";
 
 const questions = [
   {
-    title: "복도를 걷던 중, 선배에게 괴롭힘을 당하는 친구를 발견했다.",
+    title: "복도를 걷던 중,\n선배에게 괴롭힘을 당하는 친구를 발견했다.",
     size: 4,
     options: [
-      { text: "도움이 될 만한 사람을 찾아 불러온다.", score: [33, 0, 0, 0] },
-      { text: "선배에게 직접 그만두라고 얘기한다.", score: [100, 0, 0, 0] },
+      { text: "도움이 될 만한 사람을\n찾아 불러온다.", score: [33, 0, 0, 0] },
+      { text: "선배에게 직접\n그만두라고 얘기한다.", score: [100, 0, 0, 0] },
       {
-        text: "'다른 사람이 도와주겠지' 생각하고 지나친다.",
+        text: "'다른 사람이 도와주겠지'\n생각하고 지나친다.",
         score: [0, 0, 0, 0],
       },
-      { text: "선배의 관심사를 돌릴 방법을 찾아본다.", score: [66, 20, 0, 0] },
+      { text: "선배의 관심사를 돌릴\n방법을 찾아본다.", score: [66, 20, 0, 0] },
     ],
   },
   {
@@ -27,7 +27,7 @@ const questions = [
         score: [0, 0, 0, 0],
       },
       {
-        text: "인식표를 확인한 뒤, 주변 동물병원에 가서 주인을 찾아본다.",
+        text: "인식표를 확인한 뒤,\n주변 동물병원에 가서 주인을 찾아본다.",
         score: [0, 90, 0, 0],
       },
       {
@@ -38,34 +38,34 @@ const questions = [
   },
   {
     title:
-      "외국인 친구가 다른 친구들 사이에서 인종차별로 괴롭힘을 당하고 있다.",
+      "외국인 친구가 다른 친구들 사이에서\n인종차별로 괴롭힘을 당하고 있다.",
     size: 4,
     options: [
       {
-        text: "같이 괴롭힘을 당할지도 모르니 다른 친구들의 말에 조금씩 호응을 해준다.",
+        text: "같이 괴롭힘을 당할지도\n모르니 다른 친구들의 말에\n조금씩 호응을 해준다.",
         score: [0, 0, -50, 0],
       },
       {
-        text: "그 상황이 지난 뒤 외국인 친구를 따로 만나 위로하여준다.",
+        text: "그 상황이 지난 뒤\n외국인 친구를 따로 만나\n이야기를 나눈다.",
         score: [0, 0, 50, 0],
       },
       {
-        text: "다른 친구들에게 옳지 못한 행동임을 말해준 뒤 친구를 위로해준다.",
+        text: "다른 친구들에게\n옳지 못한 행동임을\n말해준 뒤\n친구에게 도움을 준다.",
         score: [0, 0, 100, 0],
       },
       {
-        text: "본인의 문제가 아니니 옹호하지도 도와주지도 않는다.",
+        text: "본인의 문제가 아니니\n옹호하지도 도와주지도\n않는다.",
         score: [0, 0, 0, 0],
       },
     ],
   },
   {
     title:
-      "확실하진 않지만 빨리 도착할 수 있는 지름길과 확실하지만 먼 길의 갈래길에 서있다.",
+      "확실하진 않지만 빨리 도착할 수 있는 지름길과,\n확실하지만 먼 길의 갈래길에 서있다.",
     size: 2,
     options: [
       {
-        text: "확실하지 않은 길은 두렵기에 시간이 걸려도 확실한 길로 간다.",
+        text: "확실하지 않은 길은 두렵기에\n시간이 걸려도 확실한 길로 간다.",
         score: [0, 0, 0, 0],
       },
       {
@@ -75,20 +75,23 @@ const questions = [
     ],
   },
   {
-    title: "평소 좋아하지 않는 팀원이 상사의 전달을 제대로 받지 못했다.",
+    title: "평소 좋아하지 않는 팀원이\n상사의 전달을 제대로 받지 못했다.",
     size: 4,
     options: [
       {
-        text: "그룹의 원활한 소통을 위해 직접 알려준다.",
+        text: "팀의 원활한 소통을 위해\n직접 알려준다.",
         score: [0, 90, 0, 0],
       },
-      { text: "'누군가 알려주겠지' 하고 내버려둔다.", score: [0, 0, 0, 0] },
       {
-        text: "일부러 잘못된 정보를 알려준다.",
+        text: "'누군가 알려주겠지'\n생각하고 내버려둔다.",
+        score: [0, 0, 0, 0],
+      },
+      {
+        text: "일부러 잘못된 정보를\n알려준다.",
         score: [0, 0, 0, 20],
       },
       {
-        text: "알고 있는 정보가 잘못되었다는 사실만 인지시킨다.",
+        text: "알고 있는 정보가\n잘못되었다는 사실만\n인지시킨다.",
         score: [0, 50, 0, 0],
       },
     ],
@@ -130,23 +133,23 @@ const questions = [
     ],
   },
   {
-    title: "조별과제의 리더가 된 당신, 그룹에 겉 도는 멤버가 보인다.",
+    title: "조별과제의 리더가 된 당신, \n그룹에 겉 도는 멤버가 보인다.",
     size: 4,
     options: [
       {
-        text: "그 멤버의 성향을 파악하여 적절한 역할을 부여하고자 노력한다.",
+        text: "그 멤버의 성향을\n파악하여 적절한 역할을\n부여하고자 노력한다.",
         score: [0, 20, 100, 0],
       },
       {
-        text: "어떻게든 다른 멤버에게 녹아들 수 있도록 한다.",
+        text: "어떻게든 다른 멤버들과\n녹아들 수 있도록 한다.",
         score: [0, 0, 33, 0],
       },
       {
-        text: "다른 신경 쓸 일이 많으니 남는 역할을 부여한다.",
+        text: "다른 신경 쓸 일이 많으니\n남는 역할을 부여한다.",
         score: [0, 0, 0, 0],
       },
       {
-        text: "스스로 본인의 역할을 얻어낼 수 있도록 한다.",
+        text: "스스로 본인의 역할을\n얻어낼 수 있도록 한다.",
         score: [0, 0, 66, 0],
       },
     ],
@@ -162,6 +165,7 @@ const Container = styled.div`
 const Theme = styled.form`
   width: 100%;
   display: flex;
+  margin-top: 50px;
   flex-direction: column;
   align-items: center;
 `;
@@ -177,7 +181,9 @@ const ButtonContainer = styled.div`
 `;
 
 const Save = styled.button`
-  height: 30px;
+  position: absolute;
+  top: 550px;
+  height: 50px;
   width: 80px;
   background-color: #0c0c18;
   color: white;
@@ -186,16 +192,10 @@ const Save = styled.button`
   cursor: pointer;
 `;
 
-const Title = styled.h1`
-  color: white;
-`;
-
-const Restart = styled(Link)`
-  text-decoration: none;
-`;
-
 const Result = styled.button`
-  height: 30px;
+  position: absolute;
+  top: 550px;
+  height: 50px;
   width: 80px;
   background-color: white;
   color: #0c0c18;
@@ -206,6 +206,20 @@ const Result = styled.button`
 
 const QuestionTitle = styled.h2`
   color: white;
+  width: 90%;
+  height: 60px;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 30px;
+  background-color: rgba(0, 0, 0, 0.6);
+  box-shadow: 0 0 18px 14px rgba(0, 0, 0, 0.6);
+  border: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  border-radius: 50px;
+  white-space: pre-wrap;
 `;
 const Cover = styled.img`
   position: absolute;
@@ -216,10 +230,24 @@ const Cover = styled.img`
   filter: blur(1.5px);
   opacity: 0.8;
 `;
+
+const Page = styled.div`
+  position: absolute;
+  top: 565px;
+  right: 30px;
+  height: 15px;
+  background-color: rgba(0, 0, 0, 0.6);
+  box-shadow: 0 0 5px 10px rgba(0, 0, 0, 0.6);
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  border-radius: 50%;
+`;
 const QuestPresenter = ({ handleSubmit, questionId }) => (
   <Container>
     <Cover src={img} />
-    <Title>{questions[questionId - 1].title}</Title>
     <Theme onSubmit={handleSubmit}>
       <QuestionTitle>{questions[questionId - 1].title}</QuestionTitle>
       <Question>
@@ -229,6 +257,7 @@ const QuestPresenter = ({ handleSubmit, questionId }) => (
           options={questions[questionId - 1].options}
         />
       </Question>
+      <Page>{questionId}/8</Page>
       <ButtonContainer>
         {questionId === "8" ? (
           <Result>결과 보기</Result>
